@@ -140,3 +140,93 @@ export const STAYS: Stay[] = [
   { type: "Mountain stays", title: "High-altitude mornings", img: U("1470071459604-3b5ec3a7fe05"), text: "Guesthouses in Kazbegi, the Alps and the Himalayas — where the view from the window is the whole point." },
   { type: "City stays", title: "Bases for big cities", img: U("1536599018102-9f803c140fc1"), text: "Well-located city hotels in Singapore, Hong Kong, Dubai and Tbilisi — close to the metro, close to the food." },
 ];
+
+export interface Collab {
+  brand: string;
+  kind: string;
+  place: string;
+  img: string;
+  text: string;
+  sample: boolean;
+}
+
+// Only the Kenya safari is confirmed from Animesh's own posts (May 2026
+// reel, tagged @wildoravoyages / @SIMBALODGES). Every other entry is a
+// SAMPLE placeholder — replace with his real collabs once he confirms them.
+export const COLLABS: Collab[] = [
+  {
+    brand: "Wildora Voyages × Simba Lodges",
+    kind: "Safari trip",
+    place: "Amboseli, Kenya · May 2026",
+    img: U("1516426122078-c23e76319801"),
+    text: "The Kenya safari Animesh filmed in May 2026 — game drives in Amboseli, elephants under Kilimanjaro, and nights at Simba Lodges. Featured across reels and the full Kenya itinerary.",
+    sample: false,
+  },
+  {
+    brand: "Island resort stay",
+    kind: "Stay feature",
+    place: "Southeast Asia",
+    img: U("1573843981267-be1999ff37cd"),
+    text: "Room tours, breakfasts and the honest stay notes travellers check before they book — the stay-first format his audience saves.",
+    sample: true,
+  },
+  {
+    brand: "Destination tourism board",
+    kind: "Itinerary feature",
+    place: "Europe",
+    img: U("1467269204594-9661b134dd2b"),
+    text: "A full day-wise itinerary built around one destination — the format his audience actually follows when they book.",
+    sample: true,
+  },
+];
+
+export interface CollabPackage {
+  name: string;
+  tagline: string;
+  includes: string[];
+}
+
+// Packages are a starting point — Animesh confirms the final deliverables
+// and rates for each brand. No rates are shown: pricing is on request.
+export const COLLAB_PACKAGES: CollabPackage[] = [
+  {
+    name: "Dedicated reel",
+    tagline: "One destination, stay or product — in his itinerary-first style.",
+    includes: [
+      "1 dedicated reel (60–90 sec)",
+      "Guide + budget breakdown in comments / DM",
+      "Instagram stories on shoot day",
+      "Link in bio for 7 days",
+    ],
+  },
+  {
+    name: "Itinerary feature",
+    tagline: "Your place inside a full day-wise itinerary.",
+    includes: [
+      "Feature inside a published itinerary",
+      "Reel series (2–3 reels) around the trip",
+      "Stays, food & transport notes included",
+      "Itinerary page on the website",
+    ],
+  },
+  {
+    name: "Stay showcase",
+    tagline: "Room tours and honest stay notes for hotels & lodges.",
+    includes: [
+      "Room + property tour reel",
+      "Breakfast & amenities coverage",
+      "Honest stay notes on the website",
+      "Stories with booking link",
+    ],
+  },
+  {
+    name: "UGC for your channels",
+    tagline: "Photos & short videos your brand can reuse.",
+    includes: [
+      "Raw photos + short clips",
+      "Licence for your ads & socials",
+      "Shot in his travel style",
+      "Delivered within 7 days of the trip",
+    ],
+  },
+];

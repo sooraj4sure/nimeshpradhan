@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/itineraries", label: "Itineraries" },
   { href: "/stays", label: "Stays & Hotels" },
   { href: "/about", label: "About" },
+  { href: "/brand-collabs", label: "Brand Collabs" },
   { href: "/work-with-me", label: "Work With Me" },
 ];
 

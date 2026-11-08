@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import { EMAIL, IG_URL } from "@/app/data";
@@ -129,8 +130,11 @@ export default function WorkWithMePage() {
                     <br />• Honest, budget-first storytelling for Indian travellers
                   </p>
                   <p className="note" style={{ marginTop: 16 }}>
-                    Past brand work is listed here once Animesh confirms it — no collabs
-                    are named on this demo without his say-so.
+                    Past brand work is on the{" "}
+                    <Link href="/brand-collabs" style={{ color: "var(--terra-deep)", fontWeight: 700 }}>
+                      Brand Collabs page
+                    </Link>{" "}
+                    — only confirmed collabs are named, the rest are marked as samples.
                   </p>
                 </div>
               </div>

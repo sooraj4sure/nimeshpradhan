@@ -36,6 +36,7 @@ export default function Footer() {
             <h4>Work</h4>
             <div className="footer-links">
               <Link href="/work-with-me">Work With Me</Link>
+              <Link href="/brand-collabs">Brand Collabs</Link>
               <a href="mailto:animeshinsta16@gmail.com">Business enquiries</a>
               <a
                 href="https://www.instagram.com/_animeshpradhan_official"
